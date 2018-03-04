@@ -1,6 +1,10 @@
 apply plugin: 'com.android.application'
 apply plugin: 'androidsvgdrawable'
 
+repositories {
+    mavenLocal()
+}
+
 dependencies {
     compile(project(':integration-android')) {
         exclude(group: 'com.google.android', module: 'android')

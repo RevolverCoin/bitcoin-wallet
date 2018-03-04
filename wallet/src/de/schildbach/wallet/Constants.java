@@ -45,8 +45,8 @@ import android.text.format.DateUtils;
 public final class Constants {
     public static final boolean TEST = R.class.getPackage().getName().contains("_test");
 
-    /** Network this wallet is on (e.g. testnet or mainnet). */
-    public static final NetworkParameters NETWORK_PARAMETERS = TEST ? TestNet3Params.get() : MainNetParams.get();
+    /** Network this wallet is on (e.g. testnet or mainnet) */
+    public static final NetworkParameters NETWORK_PARAMETERS = MainNetParams.get();
 
     /** Bitcoinj global context. */
     public static final Context CONTEXT = new Context(NETWORK_PARAMETERS);
