@@ -155,7 +155,7 @@ v5.03
 
 v5.02
 
-* Dynamic network fee. This will help dealing with an overloaded Bitcoin network.
+* Dynamic network fee. This will help dealing with an overloaded RevolverCoin network.
 
 v5.01
 
@@ -303,7 +303,7 @@ v4.46
 
 v4.45
 
-* Adjusts to the new network fee rules imposed by Bitcoin Core.
+* Adjusts to the new network fee rules imposed by RevolverCoin Core.
 * Now requires Android 4.0.3 (ICS) for all subprojects.
 * Update Russian, Italian, Turkish, Swedish, Spanish, Norwegian Bokmål, Japanese, Hungarian,
   Finnish, Dutch, Danish, Traditional Chinese and Brazilian Portuguese translations.
@@ -527,7 +527,7 @@ v4.06
 
 v4.05
 
-* Re-add textual Bitcoin address to enlarged QR code.
+* Re-add textual RevolverCoin address to enlarged QR code.
 
 v4.04
 
@@ -535,7 +535,7 @@ v4.04
 
 v4.03
 
-* Remove textual Bitcoin address from main screen.
+* Remove textual RevolverCoin address from main screen.
 * Warning for users with pay-to-many transactions. Those will slow down their
   wallet.
 * Workaround for crash in the network monitor.
@@ -553,7 +553,7 @@ v4.01
 
 v4.0
 
-* All Bitcoin addresses are now deterministically derived from one single secret,
+* All RevolverCoin addresses are now deterministically derived from one single secret,
   which was created when you installed the app for the first time. So from now on,
   only one backup is needed to recover all your future funds in that wallet.
 * The app does its best to not reuse addresses any more. "Request coins" will use a
@@ -639,7 +639,7 @@ v3.46
 
 * New translation into Slovenian.
 * Update Hebrew translation.
-* Fix missing transactions due to once dusty outputs which are standard as of Bitcoin Core 0.9.
+* Fix missing transactions due to once dusty outputs which are standard as of RevolverCoin Core 0.9.
 * Preparation for fetching payment requests via Bluetooth.
 * Based on bitcoinj 0.11.2.
 
@@ -699,8 +699,8 @@ v3.32
 
 v3.31
 
-* Default denomination has changed to millibitcoin (mBTC).
-* Cross-calculated exchange rates for currencies without Bitcoin volume. Thanks to BitcoinAverage.
+* Default denomination has changed to millibitcoin (mXRE).
+* Cross-calculated exchange rates for currencies without RevolverCoin volume. Thanks to BitcoinAverage.
 * Better handling of errors when sending coins, specifically when funds are exceeded.
 * Labs: Uses BIP70 payment protocol for tap-to-pay and scan-to-pay, if enabled in the settings.
 * New translations into Traditional Chinese, Macedonian and Esperanto. Updated Spanish.
@@ -735,7 +735,7 @@ v3.26
 
 v3.25
 
-* support for mBTC denomination
+* support for mXRE denomination
 * also use weighted exchange rates from BitcoinAverage
 * fixed issue with camera autofocus on some Samsung Galaxy devices
 
@@ -801,7 +801,7 @@ v3.13
 
 v3.12
 
-* direct button on main screen for scanning a Bitcoin request QR code
+* direct button on main screen for scanning a RevolverCoin request QR code
 * extended logging
 
 v3.11
@@ -811,7 +811,7 @@ v3.11
 v3.10
 
 * embed currency calculator into send and request coins forms
-* change default Bitcoin precision from 8 to 4
+* change default RevolverCoin precision from 8 to 4
 
 v3.09
 

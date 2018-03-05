@@ -201,7 +201,7 @@ public class WalletUtils {
     public static void writeKeys(final Writer out, final List<ECKey> keys) throws IOException {
         final DateFormat format = Iso8601Format.newDateTimeFormatT();
 
-        out.write("# KEEP YOUR PRIVATE KEYS SAFE! Anyone who can read this can spend your Bitcoins.\n");
+        out.write("# KEEP YOUR PRIVATE KEYS SAFE! Anyone who can read this can spend your RevolverCoins.\n");
 
         for (final ECKey key : keys) {
             out.write(key.getPrivateKeyEncoded(Constants.NETWORK_PARAMETERS).toBase58());

@@ -55,6 +55,7 @@
     <item
         android:id="@+id/wallet_options_exchange_rates"
         android:showAsAction="never"
+        android:visible="false"
         android:title="@string/exchange_rates_activity_title"/>
     <item
         android:id="@+id/wallet_options_sweep_wallet"
@@ -71,6 +72,7 @@
     <item
         android:id="@+id/wallet_options_report_issue"
         android:showAsAction="never"
+        android:visible="false"
         android:title="@string/preferences_report_issue_title"/>
     <item
         android:id="@+id/wallet_options_help"

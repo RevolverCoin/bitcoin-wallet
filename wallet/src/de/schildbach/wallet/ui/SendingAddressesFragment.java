@@ -331,7 +331,7 @@ public final class SendingAddressesFragment extends FancyListFragment
     }
 
     private void handleCopyToClipboard(final String address) {
-        clipboardManager.setPrimaryClip(ClipData.newPlainText("Bitcoin address", address));
+        clipboardManager.setPrimaryClip(ClipData.newPlainText("RevolverCoin address", address));
         log.info("sending address copied to clipboard: {}", address.toString());
         new Toast(activity).toast(R.string.wallet_address_fragment_clipboard_msg);
     }

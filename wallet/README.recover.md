@@ -1,10 +1,10 @@
-Recovering Bitcoins
+Recovering RevolverCoins
 ===================
 
 ## PROLOGUE
 
-This document describes how you can use a backup file on a standard PC to recover your Bitcoins.
-Normally, this shouldn't be needed. It is much preferred to just use **Options > Safety > Restore wallet** from within the Bitcoin Wallet app if you can. This guide is only meant for rare cases:
+This document describes how you can use a backup file on a standard PC to recover your RevolverCoins.
+Normally, this shouldn't be needed. It is much preferred to just use **Options > Safety > Restore wallet** from within the RevolverCoin Wallet app if you can. This guide is only meant for rare cases:
 
 - Your Android device is destroyed or missing and you do not want or cannot get a new Android
   device.
@@ -123,7 +123,7 @@ succeeds, it will print the transaction hash of the created transaction. You can
 a block explorer to watch, or just open the destination wallet and watch from there. If your coins
 are confirmed, you're done and you can skip the next paragraph to EPILOGUE.
 
-You can also get a list of the private keys. If your wallet has a spending PIN set you need to decrypt it first, otherwise the private keys won't appear. Note that when you decrypt the wallet *the private keys can be accessed (and your Bitcoins stolen) by anyone with access to the system*, including malware or other users. Unless you fully trust the security of the computer consider running it on an offline system with no network connectivity.
+You can also get a list of the private keys. If your wallet has a spending PIN set you need to decrypt it first, otherwise the private keys won't appear. Note that when you decrypt the wallet *the private keys can be accessed (and your RevolverCoins stolen) by anyone with access to the system*, including malware or other users. Unless you fully trust the security of the computer consider running it on an offline system with no network connectivity.
 
     ./wallet-tool decrypt --wallet=/tmp/bitcoin-wallet-decrypted-backup --password=<PIN>
 
@@ -144,7 +144,7 @@ datetime string after each key is the birthdate of that key which you can ignore
 of this one-time recovery.
 
 You can import each individual key into a PC wallet like [Electrum](https://electrum.org)
-or [Bitcoin Core](https://bitcoincore.org/).
+or [RevolverCoin Core](https://bitcoincore.org/).
 
 As soon as you see your whole balance again, empty your entire wallet to the desired destination
 wallet. Please do not continue to use the imported wallet. Remember you just operated on

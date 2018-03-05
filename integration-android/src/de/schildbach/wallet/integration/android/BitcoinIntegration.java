@@ -34,12 +34,12 @@ public final class BitcoinIntegration {
     private static final String MIMETYPE_PAYMENTREQUEST = "application/bitcoin-paymentrequest"; // BIP 71
 
     /**
-     * Request any amount of Bitcoins (probably a donation) from user, without feedback from the app.
+     * Request any amount of RevolverCoins (probably a donation) from user, without feedback from the app.
      * 
      * @param context
      *            Android context
      * @param address
-     *            Bitcoin address
+     *            RevolverCoin address
      */
     public static void request(final Context context, final String address) {
         final Intent intent = makeBitcoinUriIntent(address, null);
@@ -48,14 +48,14 @@ public final class BitcoinIntegration {
     }
 
     /**
-     * Request specific amount of Bitcoins from user, without feedback from the app.
+     * Request specific amount of RevolverCoins from user, without feedback from the app.
      * 
      * @param context
      *            Android context
      * @param address
-     *            Bitcoin address
+     *            RevolverCoin address
      * @param amount
-     *            Bitcoin amount in satoshis
+     *            RevolverCoin amount in satoshis
      */
     public static void request(final Context context, final String address, final long amount) {
         final Intent intent = makeBitcoinUriIntent(address, amount);
@@ -78,12 +78,12 @@ public final class BitcoinIntegration {
     }
 
     /**
-     * Request any amount of Bitcoins (probably a donation) from user, with feedback from the app. Result
+     * Request any amount of RevolverCoins (probably a donation) from user, with feedback from the app. Result
      * intent can be received by overriding {@link android.app.Activity#onActivityResult()}. Result indicates
      * either {@link Activity#RESULT_OK} or {@link Activity#RESULT_CANCELED}. In the success case, use
      * {@link #transactionHashFromResult(Intent)} to read the transaction hash from the intent.
      * 
-     * Warning: A success indication is no guarantee! To be on the safe side, you must drive your own Bitcoin
+     * Warning: A success indication is no guarantee! To be on the safe side, you must drive your own RevolverCoin
      * infrastructure and validate the transaction.
      * 
      * @param activity
@@ -92,7 +92,7 @@ public final class BitcoinIntegration {
      *            Code identifying the call when {@link android.app.Activity#onActivityResult()} is called
      *            back
      * @param address
-     *            Bitcoin address
+     *            RevolverCoin address
      */
     public static void requestForResult(final Activity activity, final int requestCode, final String address) {
         final Intent intent = makeBitcoinUriIntent(address, null);
@@ -101,12 +101,12 @@ public final class BitcoinIntegration {
     }
 
     /**
-     * Request specific amount of Bitcoins from user, with feedback from the app. Result intent can be
+     * Request specific amount of RevolverCoins from user, with feedback from the app. Result intent can be
      * received by overriding {@link android.app.Activity#onActivityResult()}. Result indicates either
      * {@link Activity#RESULT_OK} or {@link Activity#RESULT_CANCELED}. In the success case, use
      * {@link #transactionHashFromResult(Intent)} to read the transaction hash from the intent.
      * 
-     * Warning: A success indication is no guarantee! To be on the safe side, you must drive your own Bitcoin
+     * Warning: A success indication is no guarantee! To be on the safe side, you must drive your own RevolverCoin
      * infrastructure and validate the transaction.
      * 
      * @param activity
@@ -115,7 +115,7 @@ public final class BitcoinIntegration {
      *            Code identifying the call when {@link android.app.Activity#onActivityResult()} is called
      *            back
      * @param address
-     *            Bitcoin address
+     *            RevolverCoin address
      */
     public static void requestForResult(final Activity activity, final int requestCode, final String address,
             final long amount) {
@@ -130,7 +130,7 @@ public final class BitcoinIntegration {
      * {@link Activity#RESULT_CANCELED}. In the success case, use {@link #transactionHashFromResult(Intent)}
      * to read the transaction hash from the intent.
      * 
-     * Warning: A success indication is no guarantee! To be on the safe side, you must drive your own Bitcoin
+     * Warning: A success indication is no guarantee! To be on the safe side, you must drive your own RevolverCoin
      * infrastructure and validate the transaction.
      * 
      * @param activity
@@ -161,7 +161,7 @@ public final class BitcoinIntegration {
     }
 
     /**
-     * Put BIP70 payment message into result intent. Meant for usage by Bitcoin wallet applications.
+     * Put BIP70 payment message into result intent. Meant for usage by RevolverCoin wallet applications.
      * 
      * @param result
      *            result intent
@@ -173,11 +173,11 @@ public final class BitcoinIntegration {
     }
 
     /**
-     * Get BIP70 payment message from result intent. Meant for usage by applications initiating a Bitcoin
+     * Get BIP70 payment message from result intent. Meant for usage by applications initiating a RevolverCoin
      * payment.
      * 
      * You can use the transactions contained in the payment to validate the payment. For this, you need your
-     * own Bitcoin infrastructure though. There is no guarantee that the payment will ever confirm.
+     * own RevolverCoin infrastructure though. There is no guarantee that the payment will ever confirm.
      * 
      * @param result
      *            result intent
@@ -190,7 +190,7 @@ public final class BitcoinIntegration {
     }
 
     /**
-     * Put transaction hash into result intent. Meant for usage by Bitcoin wallet applications.
+     * Put transaction hash into result intent. Meant for usage by RevolverCoin wallet applications.
      * 
      * @param result
      *            result intent
@@ -202,11 +202,11 @@ public final class BitcoinIntegration {
     }
 
     /**
-     * Get transaction hash from result intent. Meant for usage by applications initiating a Bitcoin payment.
+     * Get transaction hash from result intent. Meant for usage by applications initiating a RevolverCoin payment.
      * 
-     * You can use this hash to request the transaction from the Bitcoin network, in order to validate. For
-     * this, you need your own Bitcoin infrastructure though. There is no guarantee that the transaction has
-     * ever been broadcasted to the Bitcoin network.
+     * You can use this hash to request the transaction from the RevolverCoin network, in order to validate. For
+     * this, you need your own RevolverCoin infrastructure though. There is no guarantee that the transaction has
+     * ever been broadcasted to the RevolverCoin network.
      * 
      * @param result
      *            result intent
@@ -258,7 +258,7 @@ public final class BitcoinIntegration {
     }
 
     private static void redirectToDownload(final Context context) {
-        Toast.makeText(context, "No Bitcoin application found.\nPlease install Bitcoin Wallet.", Toast.LENGTH_LONG)
+        Toast.makeText(context, "No RevolverCoin application found.\nPlease install RevolverCoin Wallet.", Toast.LENGTH_LONG)
                 .show();
 
         final Intent marketIntent = new Intent(Intent.ACTION_VIEW,

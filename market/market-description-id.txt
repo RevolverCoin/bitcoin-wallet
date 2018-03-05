@@ -1,16 +1,16 @@
-Dengan aplikasi ini Anda selalu mempunyai Bitcoin dengan Anda, dalam saku Anda! Anda dapat mengirim pembayaran hanya dengan memindai kode-QR atau mendekatkan dua ponsel bersama (NFC). Bitcoin Wallet dirancang untuk mudah digunakan dan diandalkan, sementara juga menjadi lebih aman dan cepat.
+Dengan aplikasi ini Anda selalu mempunyai RevolverCoin dengan Anda, dalam saku Anda! Anda dapat mengirim pembayaran hanya dengan memindai kode-QR atau mendekatkan dua ponsel bersama (NFC). RevolverCoin Wallet dirancang untuk mudah digunakan dan diandalkan, sementara juga menjadi lebih aman dan cepat.
 
 FITUR:
 
 • Tidak diperlukan server awan atau layanan web! Dompet ini benar-benar peer ke peer.
-• Tampilkan saldo dompet dalam Bitcoin dan mata uang lainnya.
-• Mengirim dan menerima Bitcoin via NFC, kode-QR atau Tautan Bitcoin.
+• Tampilkan saldo dompet dalam RevolverCoin dan mata uang lainnya.
+• Mengirim dan menerima RevolverCoin via NFC, kode-QR atau Tautan RevolverCoin.
 • Buku alamat untuk alamat penggunaan bitcoin secara reguler.
 • Masukkan transaksi saat offline, akan dilaksanakan ketika online.
-• Notifikasi sistem untuk konektivitas Bitcoin dan menerima koin.
-• Widget Apl untuk saldo Bitcoin.
+• Notifikasi sistem untuk konektivitas RevolverCoin dan menerima koin.
+• Widget Apl untuk saldo RevolverCoin.
 
-Jika Anda ingin berkontribusi kepada Bitcoin Wallet, proyeknya berada di
+Jika Anda ingin berkontribusi kepada RevolverCoin Wallet, proyeknya berada di
 https://github.com/bitcoin-wallet/bitcoin-wallet
 
 Lisensi: GPLv3

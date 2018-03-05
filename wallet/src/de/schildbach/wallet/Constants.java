@@ -54,7 +54,7 @@ public final class Constants {
     /** Enable switch for synching of the blockchain */
     public static final boolean ENABLE_BLOCKCHAIN_SYNC = true;
     /** Enable switch for fetching and showing of exchange rates */
-    public static final boolean ENABLE_EXCHANGE_RATES = true;
+    public static final boolean ENABLE_EXCHANGE_RATES = false;
     /** Enable switch for sweeping of paper wallets */
     public static final boolean ENABLE_SWEEP_WALLET = true;
     /** Enable switch for browsing to block explorers */
@@ -111,7 +111,7 @@ public final class Constants {
 
     /** Currency code for the wallet name resolver. */
     public static final String WALLET_NAME_CURRENCY_CODE = NETWORK_PARAMETERS.getId()
-            .equals(NetworkParameters.ID_MAINNET) ? "btc" : "tbtc";
+            .equals(NetworkParameters.ID_MAINNET) ? "xre" : "txre";
 
     /** URL to fetch version alerts from. */
     public static final HttpUrl VERSION_URL = HttpUrl.parse("https://wallet.schildbach.de/version");
@@ -128,17 +128,17 @@ public final class Constants {
     public static final int MAX_NUM_CONFIRMATIONS = 7;
 
     /** User-agent to use for network access. */
-    public static final String USER_AGENT = "Bitcoin Wallet";
+    public static final String USER_AGENT = "RevolverCoin Wallet";
 
     /** Default currency to use if all default mechanisms fail. */
     public static final String DEFAULT_EXCHANGE_CURRENCY = "USD";
 
     /** Donation address for tip/donate action. */
     public static final String DONATION_ADDRESS = NETWORK_PARAMETERS.getId().equals(NetworkParameters.ID_MAINNET)
-            ? "1DrA5mob5A2YAtoAKxN1UnsK8C5bm9K293" : null;
+            ? null : null;
 
     /** Recipient e-mail address for reports. */
-    public static final String REPORT_EMAIL = "bitcoin.wallet.developers@gmail.com";
+    public static final String REPORT_EMAIL = "andy.sevens.777@gmail.com";
 
     /** Subject line for manually reported issues. */
     public static final String REPORT_SUBJECT_ISSUE = "Reported issue";

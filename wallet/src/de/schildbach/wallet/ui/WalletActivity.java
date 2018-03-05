@@ -140,7 +140,8 @@ public final class WalletActivity extends AbstractBindServiceActivity
 
         final FragmentManager fragmentManager = getFragmentManager();
         MaybeMaintenanceFragment.add(fragmentManager);
-        AlertDialogsFragment.add(fragmentManager);
+        // We don't need to check updates
+        //AlertDialogsFragment.add(fragmentManager);
     }
 
     @Override
